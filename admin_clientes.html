@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Panel de clientes de Bella Glam. Zona privada.">
+  <title>Clientes | BELLA GLAM</title>
+  <link rel="icon" href="recursos/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor barra-superior">
+      <a class="marca" href="index.html">
+        <img class="marca-logo" src="recursos/img/logo.svg" alt="Bella Glam - Makeup Store">
+      </a>
+      <nav class="menu" aria-label="Menú de administración">
+        <a href="admin.html">Pedidos</a>
+        <a class="activo" href="admin_clientes.html">Clientes</a>
+        <a href="index.html">← Volver a la tienda</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="titulo-pagina">
+      <div class="contenedor">
+        <p class="etiqueta">🔒 Zona privada</p>
+        <h1>Clientes registrados</h1>
+        <p>Información de clientes que han enviado mensajes o recomendaciones.</p>
+      </div>
+    </section>
+
+    <!-- Acceso con el usuario real creado en Supabase (Authentication → Users) -->
+    <section class="contenedor formulario-seccion" id="adminLogin">
+      <form class="formulario admin-login" id="formAdmin">
+        <h2>🔐 Acceso privado</h2>
+        <p class="admin-login-texto">Entra con el correo y la contraseña del usuario que creaste en Supabase → Authentication → Users.</p>
+        <div class="campo">
+          <label for="correoAdmin">Correo</label>
+          <input id="correoAdmin" name="correoAdmin" type="email" placeholder="tu-correo@ejemplo.com" autocomplete="username" required>
+        </div>
+        <div class="campo">
+          <label for="contrasena">Contraseña</label>
+          <input id="contrasena" name="contrasena" type="password" placeholder="Escribe tu contraseña" autocomplete="current-password" required>
+        </div>
+        <p class="admin-error" id="adminError" hidden>❌ Correo o contraseña incorrectos. Inténtalo de nuevo.</p>
+        <button class="boton" id="btnEntrar" type="submit">Entrar</button>
+      </form>
+    </section>
+
+    <!-- Panel de clientes -->
+    <section class="contenedor admin-panel" id="adminPanel" hidden>
+      <p class="admin-error" id="adminAviso" hidden>⚠️ Tu sesión está abierta, pero tu correo no está en la lista de administradoras. Agrégalo a la tabla <strong>admins</strong> de Supabase y vuelve a entrar.</p>
+
+      <div class="admin-barra">
+        <h2>Lista de clientes</h2>
+        <div style="display:flex; gap:0.75rem; align-items:center; flex-wrap:wrap;">
+          <span class="pedido-fecha" id="adminCorreo"></span>
+          <button class="boton-mini" id="btnActualizar" type="button">🔄 Actualizar</button>
+          <button class="admin-salir" id="adminSalir" type="button">Cerrar sesión</button>
+        </div>
+      </div>
+
+      <div class="lista-pedidos" id="listaClientes"></div>
+
+      <div class="sin-resultados" id="clientesVacio" hidden>
+        <p class="sin-resultados-icono">👥</p>
+        <h2>No hay clientes registrados todavía</h2>
+        <p>Cuando alguien envíe un mensaje desde contacto, aparecerá aquí.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="contenedor">
+      <p>Maquillaje que te hace sentir tu misma · Tienda de maquillaje 2026</p>
+    </div>
+  </footer>
+
+  <!-- Librería de Supabase (desde CDN) y nuestra configuración -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase-config.js"></script>
+  <script src="js/admin_clientes.js"></script>
+</body>
+</html>

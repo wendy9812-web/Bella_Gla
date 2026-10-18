@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bella Glam, tu tienda de maquillaje. Labiales, bases, sombras y pestañas para que te maquilles con confianza.">
+  <title>BELLA GLAM | Makeup Store</title>
+  <link rel="icon" href="recursos/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+
+  <header class="encabezado" id="inicio">
+    <div class="contenedor barra-superior">
+      <a class="marca" href="index.html">
+        <img class="marca-logo" src="recursos/img/logo.svg" alt="Bella Glam - Makeup Store">
+      </a>
+      <nav class="menu" aria-label="Menú principal">
+        <a class="activo" href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="consulta.html">Consulta tu pedido</a>
+      </nav>
+
+      <div class="acciones-cabecera">
+        <form class="buscador-cabecera" id="formBusquedaCabecera" role="search">
+          <label class="visually-hidden" for="busquedaCabecera">Buscar productos</label>
+          <input id="busquedaCabecera" type="search" placeholder="Buscar productos..." autocomplete="off">
+          <span class="lupa"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="16.5" y1="16.5" x2="21" y2="21"></line></svg></span>
+        </form>
+        <button class="boton-carrito" type="button" data-abrir-carrito aria-label="Abrir carrito de compras">
+          <span class="icono-carrito"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12z"></path><circle cx="9" cy="20" r="1.5"></circle><circle cx="18" cy="20" r="1.5"></circle></svg></span>
+          <span class="contador-carrito" data-contador-carrito hidden>0</span>
+        </button>
+      </div>    </div>
+  </header>
+
+  <main>
+    <section class="presentacion contenedor">
+      <div class="presentacion-texto">
+        <p class="etiqueta">Tu belleza, nuestra pasión</p>
+        <h1>Descubre tu belleza con nosotros</h1>
+        <p>Tenemos labiales, bases, sombras y pestañas de las mejores marcas para que te veas y te sientas increíble todos los días.</p>
+        <a class="boton" href="catalogo.html">Ver productos</a>
+      </div>
+      <img src="recursos/img/blog_novinkymakeupZaFue0267ret169_f8f004.jpg" alt="Maquillaje de la marca Bella Glam">
+    </section>
+
+    <div class="barra-ofertas">
+      <div class="contenedor">
+        <span>🎁 Envío gratis en compras superiores a $50.000</span>
+        <span>💳 Hasta 6 cuotas sin interés</span>
+        <span>🎀 15% de descuento en tu primera compra</span>
+      </div>
+    </div>
+
+    <section class="promociones">
+      <div class="contenedor">
+        <div class="promociones-titulo">
+          <p class="etiqueta">Solo por tiempo limitado</p>
+          <h2>Promociones destacadas</h2>
+          <p class="promociones-intro">Ahorra en tus productos favoritos. Las ofertas terminarán cuando se agoten.</p>
+        </div>
+
+        <div class="tarjetas-promociones">
+          <article class="promo">
+            <span class="descuento">-30%</span>
+            <img src="recursos/img/Tono-1.webp" alt="Labial en promoción">
+            <div class="promo-cuerpo">
+              <h3>Labial Intensidad</h3>
+              <p>Color intenso que dura todo el día.</p>
+              <div class="precios">
+                <span class="precio-actual">$19.900</span>
+                <span class="precio-anterior">$28.500</span>
+              </div>
+              <a class="boton" href="catalogo.html">Comprar</a>
+            </div>
+          </article>
+
+          <article class="promo">
+            <span class="descuento">-25%</span>
+            <img src="recursos/img/base-de-maquillaje-maybelline-1.jpg" alt="Base de maquillaje en promoción">
+            <div class="promo-cuerpo">
+              <h3>Base Acabado Natural</h3>
+              <p>Cobertura suave y duradera para tu piel.</p>
+              <div class="precios">
+                <span class="precio-actual">$44.900</span>
+                <span class="precio-anterior">$59.900</span>
+              </div>
+              <a class="boton" href="catalogo.html">Comprar</a>
+            </div>
+          </article>
+
+          <article class="promo">
+            <span class="descuento">-40%</span>
+            <img src="recursos/img/sombra.jpg" alt="Sombras en promoción">
+            <div class="promo-cuerpo">
+              <h3>Paleta de Sombras</h3>
+              <p>12 tonos vibrantes en un solo combo.</p>
+              <div class="precios">
+                <span class="precio-actual">$35.900</span>
+                <span class="precio-anterior">$59.900</span>
+              </div>
+              <a class="boton" href="catalogo.html">Comprar</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="promo-bundle">
+          <div class="promo-bundle-texto">
+            <p class="etiqueta">Oferta sorpresa</p>
+            <h3>Kit Maquillaje Completo</h3>
+            <p>Lleva base, labial, sombras y pestañina en un solo combo y ahorra un 50%. El regalo perfecto.</p>
+            <span class="precio-actual">$89.900</span>
+            <span class="precio-anterior">$179.800</span>
+          </div>
+          <img src="recursos/img/prosaprofesional.webp" alt="Pestañina incluida en el kit">
+        </div>
+      </div>
+    </section>
+
+    <section class="destacados">
+      <div class="contenedor">
+        <h2>Nuestros más vendidos</h2>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <span class="numero">01</span>
+            <h3>Bases</h3>
+            <p>Acabado natural y duradero que unifica tu piel.</p>
+          </article>
+          <article class="tarjeta">
+            <span class="numero">02</span>
+            <h3>Labiales</h3>
+            <p>Colores intensos y suaves que resaltan tu sonrisa.</p>
+          </article>
+          <article class="tarjeta">
+            <span class="numero">03</span>
+            <h3>Sombras</h3>
+            <p>Vibrantes y fáciles de aplicar para una mirada irresistible.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenedor contacto">
+      <h2>¿Tienes una recomendación?</h2>
+      <a class="boton boton-claro" href="contacto.html">Contáctanos</a>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="contenedor">
+      <p>Maquillaje que te hace sentir tu misma · Tienda de maquillaje 2026 · <a href="admin.html">Administración</a></p>
+    </div>
+  </footer>
+  <script src="js/productos.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/busqueda.js"></script>
+  <script src="js/chatbot-motor.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>

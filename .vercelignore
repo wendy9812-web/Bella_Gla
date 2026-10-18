@@ -1,0 +1,21 @@
+# Archivos que NO se publican en Vercel.
+# Todo lo que aparezca aqui se omite del despliegue del sitio estatico.
+
+# Secretos (nunca deben ser publicos)
+.env
+.env.example
+
+# Base de datos local
+bella_glam.db
+
+# Backend de Python (no se usa en el sitio estatico)
+*.py
+__pycache__/
+requirements.txt
+templates/
+uploads/
+static/
+
+# Esquema de la base de datos (documentacion, no parte del sitio)
+*.sql
+supabase/

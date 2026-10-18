@@ -1,0 +1,37 @@
+# ============================================================
+# Archivos que Git NUNCA debe subir a GitHub
+# ------------------------------------------------------------
+# Es una red de seguridad: si algún día vuelve a aparecer un
+# archivo con contraseñas, no llegará al repositorio ni por error.
+# ============================================================
+
+# Archivos de secretos y configuración privada
+.env
+.env.*
+*.key
+*.pem
+
+# Bases de datos locales
+*.db
+*.sqlite
+*.sqlite3
+bella_glam.db
+
+# Basura de Python (de la antigua versión con Flask)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Carpetas y archivos que se generan solos
+node_modules/
+.vercel/
+*.log
+.DS_Store
+Thumbs.db
+
+# Copias de seguridad y pruebas locales
+*respaldo*
+*copia*
+prueba-local.html

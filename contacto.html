@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formulario de contacto de Bella Glam. Déjanos saber cómo te sientes utilizando nuestros productos.">
+  <title>Contacto | BELLA GLAM</title>
+  <link rel="icon" href="recursos/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor barra-superior">
+      <a class="marca" href="index.html">
+        <img class="marca-logo" src="recursos/img/logo.svg" alt="Bella Glam - Makeup Store">
+      </a>
+      <nav class="menu" aria-label="Menú principal">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a class="activo" href="contacto.html">Contacto</a>
+        <a href="consulta.html">Consulta tu pedido</a>
+      </nav>
+
+      <div class="acciones-cabecera">
+        <form class="buscador-cabecera" id="formBusquedaCabecera" role="search">
+          <label class="visually-hidden" for="busquedaCabecera">Buscar productos</label>
+          <input id="busquedaCabecera" type="search" placeholder="Buscar productos..." autocomplete="off">
+          <span class="lupa"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="16.5" y1="16.5" x2="21" y2="21"></line></svg></span>
+        </form>
+        <button class="boton-carrito" type="button" data-abrir-carrito aria-label="Abrir carrito de compras">
+          <span class="icono-carrito"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12z"></path><circle cx="9" cy="20" r="1.5"></circle><circle cx="18" cy="20" r="1.5"></circle></svg></span>
+          <span class="contador-carrito" data-contador-carrito hidden>0</span>
+        </button>
+      </div>    </div>
+  </header>
+
+  <main>
+    <section class="titulo-pagina">
+      <div class="contenedor">
+        <p class="etiqueta">Queremos conocer tu opinión</p>
+        <h1>Contacto</h1>
+        <p>Déjanos saber cómo te sientes utilizando nuestros productos.</p>
+      </div>
+    </section>
+
+    <section class="contenedor formulario-seccion">
+      <form class="formulario" id="formContacto">
+        <div id="mensajeContacto" class="mensaje-formulario" style="display:none; margin-bottom: 1rem; padding: 1rem; border-radius: 8px;"></div>
+        <div class="campo">
+          <label for="nombre">Nombre *</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre" required>
+        </div>
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" placeholder="nombre@correo.com">
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" name="telefono" type="tel" placeholder="Ej: 300 123 4567">
+        </div>
+        <div class="campo-doble">
+          <div class="campo">
+            <label for="ciudad">Ciudad</label>
+            <input id="ciudad" name="ciudad" type="text" placeholder="Ej: Bogotá">
+          </div>
+          <div class="campo">
+            <label for="direccion">Dirección</label>
+            <input id="direccion" name="direccion" type="text" placeholder="Ej: Calle 45 # 12-30">
+          </div>
+        </div>
+        <div class="campo">
+          <label for="mensaje">Mensaje *</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos por qué lo recomiendas" required></textarea>
+        </div>
+        <button class="boton" type="submit" id="btnEnviarContacto">Enviar recomendación</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="contenedor"><p>Maquillaje que te hace sentir tu misma · Tienda de maquillaje 2026 · <a href="admin.html">Administración</a></p></div>
+  </footer>
+  <!-- Librería de Supabase (desde CDN) y nuestra configuración -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase-config.js"></script>
+
+  <script src="js/productos.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/busqueda.js"></script>
+  <script src="js/contacto.js"></script>
+  <script src="js/chatbot-motor.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>

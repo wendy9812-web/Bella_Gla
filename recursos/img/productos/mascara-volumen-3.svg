@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+<defs>
+<linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f6d3c1"/><stop offset="100%" stop-color="#e3ab8f"/></linearGradient>
+</defs>
+<rect width="600" height="600" fill="url(#skin)"/>
+<text x="40" y="62" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#3a2a33" opacity="0.85">Tonos disponibles</text><path d='M70 140 Q 300 114 530 140' stroke='#1a1a1f' stroke-width='58' stroke-linecap='round' fill='none' opacity='0.95'/><path d='M110 128 Q 300 102 470 132' stroke='#ffffff' stroke-width='10' stroke-linecap='round' fill='none' opacity='0.22'/><path d='M70 252 Q 300 216 530 252' stroke='#3b2a2a' stroke-width='58' stroke-linecap='round' fill='none' opacity='0.95'/><path d='M110 240 Q 300 204 470 244' stroke='#ffffff' stroke-width='10' stroke-linecap='round' fill='none' opacity='0.22'/><path d='M70 364 Q 300 318 530 364' stroke='#1f2f4a' stroke-width='58' stroke-linecap='round' fill='none' opacity='0.95'/><path d='M110 352 Q 300 306 470 356' stroke='#ffffff' stroke-width='10' stroke-linecap='round' fill='none' opacity='0.22'/></svg>
