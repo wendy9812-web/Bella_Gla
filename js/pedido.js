@@ -157,6 +157,10 @@ document.addEventListener("DOMContentLoaded", () => {
       if (error) {
         console.error("Supabase rechazo el pedido:", error.message);
         avisoDelServidor = error.message;
+      } else {
+        // Mensaje de ayuda para quien este revisando la consola (F12):
+        // confirma que el pedido si llego a guardarse en la base de datos.
+        console.log("✅ Pedido guardado en Supabase:", pedido.id);
       }
     } catch (err) {
       console.error("Sin conexion con Supabase:", err);
